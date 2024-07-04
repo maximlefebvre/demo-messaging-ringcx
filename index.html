@@ -89,7 +89,7 @@
 							<h2>Démonstration</h2>
 							<p>Voici la version Web à intégrer dans vos Espaces Clients.</p>
 							<div class="features">
-								<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+								<div id="my-messaging-container"></div>
 							</div>
 						</div>
 					</section>
@@ -136,6 +136,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			  (function(d) {
+			    var cm = d.createElement('scr' + 'ipt'); cm.type = 'text/javascript'; cm.async = true;
+			    cm.src = 'https://8foth1jqwi.chat.digital.ringcentral.com/chat/dbad261e404d74a9c763fa78/loader.js';
+			    var s = d.getElementsByTagName('scr' + 'ipt')[0]; s.parentNode.insertBefore(cm, s);
+			  }(document));
 
+			  var _chatq = _chatq || [];
+			  _chatq.push(['_setConfiguration', { 'embedded': true, 'parentNodeId': 'my-messaging-container' }]);
+
+
+			</script>
 	</body>
 </html>
